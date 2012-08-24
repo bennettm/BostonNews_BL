@@ -875,7 +875,7 @@
 
        <!-- NOT using marc_display because it is large and will slow things down for search results -->
        <str name="fl">
-         id, 
+         UID, 
          score,
          author_display,
          author_vern_display, 

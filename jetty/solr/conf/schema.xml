@@ -515,7 +515,7 @@
    -->
 
    <!-- NOTE: this is not a full list of fields in the index; dynamic fields are also used -->
-   <field name="id" type="string" indexed="true" stored="true" required="true" />
+   <field name="UID" type="string" indexed="true" stored="true" required="true" />
    <field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
 
    <!-- add the following fields for WGBH data -->
@@ -611,7 +611,7 @@
  <!-- Field to use to determine and enforce document uniqueness. 
       Unless this field is marked with required="false", it will be a required field
    -->
- <uniqueKey>id</uniqueKey>
+ <uniqueKey>UID</uniqueKey>
 
  <!-- field for the QueryParser to use when an explicit fieldname is absent -->
  <defaultSearchField>text</defaultSearchField>
