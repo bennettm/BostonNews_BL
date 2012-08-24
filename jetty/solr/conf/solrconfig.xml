@@ -849,10 +849,27 @@
          subject_addl_t^10
 	 description_facet
        </str>
-	
+     <!-- the following is the starting point for the Boston Local News project -->
+       <str name="collection_qf">
+         subject_topic_unstem_search^200
+         subject_unstem_search^125
+         subject_topic_facet^100
+         subject_t^50
+         subject_addl_unstem_search^10
+         subject_addl_t
+         description_facet
+        </str>
+        
+        <str name="collection_pf">
+         subject_topic_unstem_search^2000
+         subject_unstem_search^1250
+         subject_t^1000
+         subject_topic_facet^500
+         subject_addl_unstem_search^100
+         subject_addl_t^10
+         description_facet
+         </str>	
 
-
-    
        <int name="ps">3</int>
        <float name="tie">0.01</float>
 
@@ -893,8 +910,11 @@
        <str name="facet.field">subject_era_facet</str>
        <str name="facet.field">subject_geo_facet</str>
        <str name="facet.field">subject_topic_facet</str>
+
+<!-- added the following for the Boston Local News project -->
        <str name="facet.field">description_facet</str>
-<!--added the above for WGBH -->
+       <str name="facet.field">collection_facet</str>
+<!--added the above for the Boston Local News project -->
  
        <str name="spellcheck">true</str>
        <str name="spellcheck.dictionary">default</str>

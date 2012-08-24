@@ -522,7 +522,11 @@
    <field name="created" type="date" indexed="true" stored="true" />
    <field name="title" type="text" indexed="true" stored="true" />
    <field name="series" type="text" indexed="true" stored="true" />
+   <field name="description" type="text" indexed="true" stored="true" />
+
+   <!--The following are facets that will be added to the home page as left navigation-->
    <field name="description_facet" type="text" indexed="true" stored="true" />
+   <field name="collection_facet" type="text" indexed="true" stored="true" />
    <!-- end of addition to fields from WGBH sample data -->  
 
    <!-- default, catch all search field -->

@@ -58,7 +58,8 @@ class CatalogController < ApplicationController
     config.add_facet_field 'lc_1letter_facet', :label => 'Call Number' 
     config.add_facet_field 'subject_geo_facet', :label => 'Region' 
     config.add_facet_field 'subject_era_facet', :label => 'Era'  
-    config.add_facet_field 'description_facet', :label => 'Description'  # add for WGBH PBCore data
+    config.add_facet_field 'description_facet', :label => 'Description'  # add for BLN
+    config.add_facet_field 'collection_facet', :label => 'Collection' #add for BLN 
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -156,13 +157,22 @@ class CatalogController < ApplicationController
       }
     end
 
-    #added for WGBH
+    #added for BLN 
     config.add_search_field('description') do |field|
       field.solr_parameters = { :'spellcheck.dictionary' => 'description' }
       field.qt = 'search'
       field.solr_local_parameters = {
         :qf => '$description_qf',
         :pf => '$description_pf'
+      }
+    end
+
+    #added for BLN
+     config.add_search_field('collection') do |field|
+      field.qt = 'search'
+      field.solr_local_parameters = {
+        :qf => '$collection_qf',
+        :pf => '$collection_pf'
       }
     end
 

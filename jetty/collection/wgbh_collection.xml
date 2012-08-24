@@ -1,0 +1,17 @@
+<add>  
+<docs>
+<doc>
+    <field name="id">1</field>
+    <field name="collection_facet">WGBH
+     </field>
+</doc>
+<doc>
+   <field name="id">2</field>
+   <field name="collection_facet">WGBH</field>
+</doc>
+<doc>
+   <field name="id">3</field>
+   <field name="collection_facet">WGBH</field>
+</doc>
+</docs>
+</add>
