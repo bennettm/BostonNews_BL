@@ -1,0 +1,8 @@
+ <add>        
+  <doc>
+           <field name="id">111</field>
+           <field name="title">South Boston High School</field>
+           <field name="text">Ten O'Clock News</field>
+	   <field name="description"> Students exiting South Boston High. Snow on ground. About 25 troopers board state police bus with flashing lights. Headmaster Jerome Wynegar stands casually in front of school.</field>
+         </doc>
+</add>
